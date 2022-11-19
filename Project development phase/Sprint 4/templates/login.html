@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Classic Login Form Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body style="background-image: url('../static/images/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg'); ">
+<!-- partial:index.partial.html -->
+<section class='login' id='login'>
+  <div class='head'>
+  <h1 class='company'>User Login</h1>
+  </div>
+  <p class='msg'>Welcome back</p>
+  <div class='form'>
+    <form>
+  <input type="text" placeholder='Username' class='text' id='username' required><br>
+  <input type="password" placeholder='••••••••••••••' class='password'><br>
+  <a href="/index" class='btn-login' >Login</a>
+        <a href="/register" class='btn-login' >Register</a>
+
+
+    </form>
+  </div>
+</section>
+
+
+</body>
+</html>

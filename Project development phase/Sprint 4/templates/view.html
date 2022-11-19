@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background-image: url('../static/images/istockphoto-869283118-612x612.jpg');   background-repeat: no-repeat; background-size: cover;">
+  <div class="container" style="background-color: #68EA9F;">
+    <div class="title">Prediction</div>
+    <div class="content">
+      <form class="contact2-form validate-form" action="{{ url_for('predict')}}" method="post" >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">SSLfinal_State</span>
+            <input class="input2" type="text" name="SSLfinal_State" required="required" placeholder="SSLfinal_State"/>
+          </div>
+          <div class="input-box">
+            <span class="details">URL_of_Anchor</span>
+            <input class="input2" type="text" name="URL_of_Anchor" required="required" placeholder="URL_of_Anchor"/>
+          </div>
+          <div class="input-box">
+            <span class="details">Prefix_Suffix</span>
+            <input class="input2" type="text" name="Prefix_Suffix" required="required" placeholder="Prefix_Suffix" />
+          </div>
+          <div class="input-box">
+            <span class="details">web_traffic</span>
+            <input class="input2" type="text" name="web_traffic" required="required" placeholder="Web_Traffic"/>
+          </div>
+          <div class="input-box">
+            <span class="details">Domain_registeration_length</span>
+            <input class="input2" type="text" name="Domain_registeration_length" required="required" placeholder="Domain_registeration_length"/>
+          </div>
+
+
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Predict">
+        </div>
+        <br>
+	   			<br>
+   					<h4 class="predict">{{ pred }}</h4>
+      </form>
+    </div>
+  </div>
+
+</body></html>
